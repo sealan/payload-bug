@@ -11,7 +11,9 @@ const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
 
 export default buildConfigWithDefaults({
-  // ...extend config here
+  routes: {
+    admin: '/admin/[tenant]', // custom admin route with a dynamic segment
+  },
   collections: [
     PostsCollection,
     {
