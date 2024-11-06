@@ -9,6 +9,8 @@ export const formatAdminURL = (args: {
 }): string => {
   const { adminRoute, basePath = '', path, serverURL } = args
 
+  // identify segments and handle here?
+
   if (adminRoute) {
     if (adminRoute === '/') {
       if (!path) {
